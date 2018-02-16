@@ -21,6 +21,7 @@ export class PlacesService {
            dateTime:string = new Date().toISOString()) {
     const place = new Place(title, description, location, imageUrl, dateTime);
     this.places.push(place);
+    this.postTweet(title, location);
     this.storage.set('places', this.places)
       .then()
       .catch(
@@ -75,11 +76,32 @@ export class PlacesService {
       );
   }
 
-    postTweet() {
+    postTweet(title, location) {
+/*
+        this.twitter.post(
+            'https://upload.twitter.com/1.1/media/upload.json',
+            {
+                media: 'https://devdactic.com/wp-content/uploads/2015/07/twitter-rest-api-header.png'
+            },
+            {
+                consumerKey: 'RocnkbaFkVsfrbsczCkHwxD5F',
+                consumerSecret: 'lqaM5i7RfOc5XUhX0Sr9vx1WpDP8JkqHHjAVUXLCleSAy8dpgq'
+            },
+            {
+                token: '918029713645465601-FMIfV1Kdd2vQZZEPPe1SSLQpeLogVRo',
+                tokenSecret: 'ut7WrOiJ8gFOgr3YjTBnpfeO5ROQlo54JzDmntLUWMS41'
+            }
+        ) .subscribe((res)=>{
+            this.result = res.json().map(media_id_string => media_id_string);
+           console.log(this.result);
+        });*/
+
         return this.twitter.post(
             'https://api.twitter.com/1.1/statuses/update.json',
             {
-                status: 'test tweet'
+                status: title,
+                lat: location.lat,
+                long:location.lng
             },
             {
                 consumerKey: 'RocnkbaFkVsfrbsczCkHwxD5F',
