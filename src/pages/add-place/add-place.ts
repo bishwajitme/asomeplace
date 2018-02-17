@@ -8,7 +8,7 @@ import { File, Entry, FileError } from '@ionic-native/file';
 import { SetLocationPage } from "../set-location/set-location";
 import { Location } from "../../models/location";
 import { PlacesService } from "../../services/places";
-import {normalizeURL} from 'ionic-angular';
+//import {normalizeURL} from 'ionic-angular';
 
 declare var cordova: any;
 
@@ -77,7 +77,7 @@ export class AddPlacePage {
         error => {
           loader.dismiss();
           const toast = this.toastCtrl.create({
-            message: 'Could get location, please pick it manually!',
+            message: 'Could not get location, please pick it manually!',
             duration: 2500
           });
           toast.present();
@@ -92,13 +92,17 @@ export class AddPlacePage {
     })
       .then(
         imageData => {
+
           const currentName = imageData.replace(/^.*[\\\/]/, '');
           const path = imageData.replace(/[^\/]*$/, '');
           const newFileName = new Date().getUTCMilliseconds() + '.jpg';
+
           this.file.moveFile(path, currentName, cordova.file.dataDirectory, newFileName)
             .then(
               (data: Entry) => {
-                this.imageUrl = normalizeURL(data.nativeURL);
+                //this.imageUrl = normalizeURL(data.nativeURL);
+
+                  this.imageUrl = data.nativeURL;
                   console.log('Place One: ' + this.imageUrl);
                 this.camera.cleanup();
                 // File.removeFile(path, currentName);
@@ -115,11 +119,13 @@ export class AddPlacePage {
                 this.camera.cleanup();
               }
             );
-          this.imageUrl = normalizeURL(this.imageUrl);
+          //this.imageUrl = normalizeURL(this.imageUrl);
+            this.imageUrl = imageData;
         }
       )
       .catch(
         err => {
+            console.log(err);
           const toast = this.toastCtrl.create({
             message: 'Could not take the image. Please try again',
             duration: 2500

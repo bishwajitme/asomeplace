@@ -17,6 +17,7 @@ import { SetLocationPage } from "../pages/set-location/set-location";
 import { AgmCoreModule } from "angular2-google-maps/core";
 import { PlacesService } from "../services/places";
 import { TwitterService } from 'ng2-twitter';
+import { Base64 } from '@ionic-native/base64';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { TwitterService } from 'ng2-twitter';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PlacesService,
-      TwitterService
+      TwitterService,
+      Base64
   ]
 })
 export class AppModule {

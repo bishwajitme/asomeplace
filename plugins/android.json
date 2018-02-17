@@ -21,6 +21,21 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "com-badrit-base64": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {}
