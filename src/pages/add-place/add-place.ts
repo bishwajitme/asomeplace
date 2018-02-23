@@ -9,6 +9,8 @@ import { SetLocationPage } from "../set-location/set-location";
 import { Location } from "../../models/location";
 import { PlacesService } from "../../services/places";
 //import {normalizeURL} from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
+
 
 declare var cordova: any;
 
@@ -18,8 +20,8 @@ declare var cordova: any;
 })
 export class AddPlacePage {
   location: Location = {
-    lat: 40.7624324,
-    lng: -73.9759827
+    lat: 47.4925,
+    lng: 19.0513
   };
   locationIsSet = false;
   imageUrl = '';
@@ -30,16 +32,29 @@ export class AddPlacePage {
               private placesService: PlacesService,
               private geolocation: Geolocation,
               private camera: Camera,
-              private file: File) {
+              private file: File,
+              private alertCtrl: AlertController) {
   }
 
-  onSubmit(form: NgForm) {
+
+
+    presentAlert() {
+        let alert = this.alertCtrl.create({
+            title: 'Your item was added',
+            subTitle: 'Memory just created',
+            buttons: ['OK']
+        });
+        alert.present();
+    }
+
+
+    onSubmit(form: NgForm) {
     this.placesService
       .addPlace(form.value.title, form.value.description, this.location, this.imageUrl);
     form.reset();
     this.location = {
-      lat: 40.7624324,
-      lng: -73.9759827
+      lat: 47.4925,
+      lng: 19.0513
     };
     this.imageUrl = '';
     this.locationIsSet = false;
@@ -77,7 +92,7 @@ export class AddPlacePage {
         error => {
           loader.dismiss();
           const toast = this.toastCtrl.create({
-            message: 'Could not get location, please pick it manually!',
+            message: 'Could get location, please pick it manually!',
             duration: 2500
           });
           toast.present();
@@ -92,16 +107,13 @@ export class AddPlacePage {
     })
       .then(
         imageData => {
-
           const currentName = imageData.replace(/^.*[\\\/]/, '');
           const path = imageData.replace(/[^\/]*$/, '');
           const newFileName = new Date().getUTCMilliseconds() + '.jpg';
-
           this.file.moveFile(path, currentName, cordova.file.dataDirectory, newFileName)
             .then(
               (data: Entry) => {
-                //this.imageUrl = normalizeURL(data.nativeURL);
-
+               // this.imageUrl = normalizeURL(data.nativeURL);
                   this.imageUrl = data.nativeURL;
                   console.log('Place One: ' + this.imageUrl);
                 this.camera.cleanup();
@@ -119,13 +131,11 @@ export class AddPlacePage {
                 this.camera.cleanup();
               }
             );
-          //this.imageUrl = normalizeURL(this.imageUrl);
             this.imageUrl = imageData;
         }
       )
       .catch(
         err => {
-            console.log(err);
           const toast = this.toastCtrl.create({
             message: 'Could not take the image. Please try again',
             duration: 2500

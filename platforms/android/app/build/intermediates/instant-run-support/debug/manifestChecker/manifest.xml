@@ -42,6 +42,15 @@
         </activity>
 
         <provider
+            android:name="nl.xservices.plugins.FileProvider"
+            android:authorities="io.ionic.starter.sharing.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/sharing_paths" />
+        </provider>
+        <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="io.ionic.starter.provider"
             android:exported="false"

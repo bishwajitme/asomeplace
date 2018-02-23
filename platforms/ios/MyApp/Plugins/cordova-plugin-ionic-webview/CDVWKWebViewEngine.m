@@ -145,7 +145,7 @@
     if(@available(iOS 10.0, *)) {
         configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
     }else{
-        configuration.mediaTypesRequiringUserActionForPlayback = YES;
+        configuration.mediaPlaybackRequiresUserAction = YES;
     }
 #else
     configuration.mediaPlaybackRequiresUserAction = YES;

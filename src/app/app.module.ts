@@ -14,10 +14,11 @@ import { HomePage } from '../pages/home/home';
 import { AddPlacePage } from "../pages/add-place/add-place";
 import { PlacePage } from "../pages/place/place";
 import { SetLocationPage } from "../pages/set-location/set-location";
+import { WelcomePage } from "../pages/welcome/welcome";
 import { AgmCoreModule } from "angular2-google-maps/core";
 import { PlacesService } from "../services/places";
 import { TwitterService } from 'ng2-twitter';
-import { Base64 } from '@ionic-native/base64';
+import {SocialSharing} from "@ionic-native/social-sharing";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Base64 } from '@ionic-native/base64';
     HomePage,
     AddPlacePage,
     PlacePage,
-    SetLocationPage
+    SetLocationPage,
+      WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -42,9 +44,11 @@ import { Base64 } from '@ionic-native/base64';
     HomePage,
     AddPlacePage,
     PlacePage,
-    SetLocationPage
+    SetLocationPage,
+      WelcomePage
   ],
   providers: [
+    SocialSharing,
     File,
     Camera,
     Geolocation,
@@ -52,8 +56,7 @@ import { Base64 } from '@ionic-native/base64';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PlacesService,
-      TwitterService,
-      Base64
+      TwitterService
   ]
 })
 export class AppModule {

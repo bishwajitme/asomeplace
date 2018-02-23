@@ -26148,10 +26148,73 @@ page-add-place sebm-google-map {
   height: 250px;
 }
 
+page-add-place .title {
+  font-size: 120%;
+}
+
+page-add-place .bg {
+  background: #faf8f5;
+}
+
+page-home .bg {
+  background: url("../assets/img/background2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+page-home ion-card {
+  width: 200px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+page-home .title {
+  color: #387EF5;
+}
+
 page-place sebm-google-map {
   height: 250px;
 }
 
+page-place .customIcon {
+  font-size: 1.7em;
+}
+
+page-place .bg {
+  background-color: #fdf7ed;
+  color: #000;
+}
+
 page-set-location sebm-google-map {
   height: 250px;
+}
+
+page-welcome h1 {
+  color: #D9853B;
+  font-family: "PT Sans";
+  font-size: 300%;
+  text-align: center;
+  padding-top: 180px;
+}
+
+page-welcome h3 {
+  color: #D9853B;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+page-welcome .bg-image {
+  background: url("../assets/img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+page-welcome .customIcon {
+  margin-left: 5%;
+}
+
+page-welcome button {
+  text-align: center;
+  text-transform: none !important;
 }

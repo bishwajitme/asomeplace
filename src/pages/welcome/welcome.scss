@@ -1,0 +1,31 @@
+page-welcome {
+
+  h1{
+    color: #D9853B;
+    font-family: "PT Sans";
+    font-size: 300%;
+    text-align: center;
+    padding-top: 180px;
+  }
+  h3{
+    color: #D9853B;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+
+  .bg-image{
+    background: url('../assets/img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .customIcon{
+    margin-left: 5%;
+  }
+
+  button{
+    text-align: center;
+    text-transform: none !important;
+  }
+}

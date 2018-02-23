@@ -2,13 +2,13 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="22"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1518892285213"
-    token="-7673093186366510243"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="1519385611531"
+    token="8117146630257082479"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -24,81 +24,65 @@
         duration="0" />
 
     <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+        location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1518892285213"
+        timestamp="1519383244752"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1519383500292"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1519385611531"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

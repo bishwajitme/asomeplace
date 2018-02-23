@@ -1,23 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "outputFile": "/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/bishwajithalder/ionic/awesomeplace/platforms/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/bishwajithalder/ionic/Awesome-Ionic-master/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,55,98",
-                        "endColumns": "63,42,58",
-                        "endOffsets": "216,93,152"
+                        "startLines": "-1,2,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,55,-1",
+                        "endColumns": "-1,50,-1",
+                        "endOffsets": "-1,101,-1"
                     },
                     "to": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
-                        "startOffsets": "55,119,162",
-                        "endColumns": "63,42,58",
-                        "endOffsets": "114,157,216"
+                        "startOffsets": "55,119,170",
+                        "endColumns": "63,50,58",
+                        "endOffsets": "114,165,224"
                     }
                 }
             ]

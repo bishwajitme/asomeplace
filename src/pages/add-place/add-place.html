@@ -8,26 +8,29 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="bg">
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
     <ion-list>
       <ion-item>
-        <ion-label fixed>Title</ion-label>
+        <ion-label fixed class="title">Place Title</ion-label>
         <ion-input
           type="text"
-          placeholder="Beautiful church..."
+          placeholder="Beautiful places..."
           name="title"
           ngModel
           required></ion-input>
       </ion-item>
+
       <ion-item>
-        <ion-label floating>Short Description</ion-label>
+        <ion-label floating>Place Description</ion-label>
         <ion-textarea
           name="description"
           ngModel
           required></ion-textarea>
       </ion-item>
     </ion-list>
+
     <ion-grid>
       <ion-row>
         <ion-col>
@@ -98,7 +101,8 @@
             color="secondary"
             block
             type="submit"
-            [disabled]="!f.valid || !locationIsSet">
+            [disabled]="!f.valid || !locationIsSet"
+            (click)="presentAlert()">
             Add this Place
           </button>
         </ion-col>
