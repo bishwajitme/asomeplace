@@ -101,7 +101,7 @@
             color="secondary"
             block
             type="submit"
-            [disabled]="!f.valid || !locationIsSet"
+            [disabled]="!f.valid || !locationIsSet || !imageUrl"
             (click)="presentAlert()">
             Add this Place
           </button>
